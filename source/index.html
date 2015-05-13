@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- HTML5 Doctype -->
+<!-- Pre-filled HTML5-valid index page using grunt task -->
+
+<html lang="en" data-ng-app="angular-modular">
+<head>
+    <!-- Automatically include app title at the compilation using package.json informations -->
+    <title><!-- %%title%% --></title>
+
+
+    <!-- Application metas -->
+    <meta charset="utf-8">
+    <meta property="description" name="description" content="" data-app>
+    <base href="/">
+
+    <!-- Include compiled and compressed stylesheets -->
+    <!-- %%styles%% -->
+
+    <!-- Include compressed librairies as one file and compressed app scripts as one file -->
+    <!-- %%scripts%% -->
+</head>
+<body data-ng-controller="AppController">
+
+    <!-- Include partial header html file -->
+    <header data-ng-include="'header.tpl.html'"></header>
+
+    <main class="content">
+        <div data-ui-view></div>
+    </main>
+
+    <!-- Include partial footer html file -->
+    <footer data-ng-include="'footer.tpl.html'"></footer>
+</body>
+</html>

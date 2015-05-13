@@ -1,0 +1,15 @@
+/**
+ *  Global stylesheet merging common styles and modules specific ones
+ */
+
+/* Dependencies */
+//@include "common/style/colors";
+//@include "common/style/mixins";
+
+
+/* Patterns */
+@import "common/style/_default";
+
+
+/* Modules */
+@import "modules/public/_public";
